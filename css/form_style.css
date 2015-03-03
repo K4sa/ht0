@@ -1,0 +1,112 @@
+body {
+	background-image: url(img/bg.jpg);
+}
+
+.header-container {
+}
+
+h1 {
+	font-size: 140%;
+}
+
+.main {
+	height: 100vh;
+}
+
+.info_area {
+	height: 250px;
+	padding-right: 45px;
+	padding-left: 45px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #1D181F;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+#header {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 180%;
+	color: #fff;
+}
+
+.jumbotron {
+	background: -webkit-linear-gradient(left,rgba(0, 172, 174, 0.7),rgba(26, 39, 50, 0.7)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(0, 172, 174, 0.7),rgba(26, 39, 50, 0.7)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(0, 172, 174, 0.7),rgba(26, 39, 50, 0.7)); /*Fx 3.6-15*/
+    background: linear-gradient(to right, rgba(0, 172, 174, 0.7), rgba(26, 39, 50, 0.7)); /*Standard*/
+	color: #fff;
+}
+
+.form-container {
+	padding: 0% 20% 0% 20%;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+.alert {
+	margin: 0% 20% 0% 20%;
+}
+
+.btn-default {
+	margin-top: 20px;
+	border-radius: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.center-pills {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-pane {
+    min-height: 350px;
+}
+
+.check {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.nav-pills > li >a:hover  {
+	background-color: #B00027;
+}
+
+.nav-pills > li.active > a {
+	background-color: #2A75BB;
+}
+
+.nav-pills > li > a {
+	background-color: #8F0020;
+	color: #fff;
+	border-radius: 0;
+	margin: 20px;
+	width: 120px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+#info-btn {
+	display:inline-block;
+	background: transparent;
+	border-color: transparent;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	color: #0092B2;
+}
+
+#inner_icon {
+	color: #292929; 
+}
+
+#inner_icon:focus {
+	color: #292929; 
+}
+
