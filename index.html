@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>HT0</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100|Oswald' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/form_style.css">
+</head>
+<body>
+<div class="main">
+  <div class="header-container">
+    <div id="header">
+      <h1>TIE-23500 WEB-OHJELMOINTI</h1>
+      <p>Ilmoita harjoitustyöryhmä kurssille tai tarkista oma ilmottautumisesi opiskelijanumerolla</p>
+    </div>
+  </div>
+  <div class="jumbotron" role="tabpanel">
+    <div class="form-container tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="sign-form">
+	      <form method="POST" action="https://leikki-ilmo.appspot.com/ilmoittaudu" class="form_post">
+          <div class="row">
+	   	      <div class="form-group col-md-6">
+              <label for="group">Ryhmän tiedot</label>
+  	 		      <input type="text" name="name" class="form-control" placeholder="Ryhmän nimi"><br>
+  			      <textarea type="text" name="info" class="form-control" placeholder="Vapaa tekstikenttä" rows="7"></textarea>
+		        </div>
+            <div class="col-md-6">
+		          <div class="form-group">
+                <label for="student1">Opiskelijan 1 tiedot</label>
+  			        <input type="text" name="op1_num" class="form-control" placeholder="Opiskelijanumero"><br>
+  			        <input type="text" name="op1_user" class="form-control" placeholder="Intra-tunnus">
+		          </div>
+
+		          <div class="form-group">
+                <label for="student2">Opiskelijan 2 tiedot</label>
+  			        <input type="text" name="op2_num" class="form-control" placeholder="Opiskelijanumero"><br>
+  			        <input type="text" name="op2_user" class="form-control" placeholder="Intra-tunnus">
+		          </div>
+            </div>
+          </div>
+		      <div class="col-md-12 text-center">
+            <button type="submit" class="btn btn-default">Lähetä</button>
+          </div>
+        </form>
+	      </div>
+        <div role="tabpanel" class="tab-pane fade" id="check-form">
+        <form method="GET" action="https://leikki-ilmo.appspot.com/tarkista" class="form_get">
+          <div class="row">
+            <div>
+              <div class="form-group check">
+                <label for="student1">Opiskelijanumero</label>
+                <input type="text" name="num" class="form-control" placeholder="Opiskelijanumero"><br>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="submit" class="btn btn-default">Lähetä</button>
+          </div>
+        </form>
+        </div>
+        </div>
+        <br>
+        <div class="col-md-12 text-center">
+          <ul class="nav nav-pills center-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#sign-form" aria-controls="sign-form" role="pill" data-toggle="pill">Ilmoittaudu</a></li>
+            <li role="presentation"><a href="#check-form" aria-controls="check-form" role="pill" data-toggle="pill">Tarkista</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="span3 text-center">
+      <a class="btn btn-primary btn-lg" id="info-btn"  role="button"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x" id="outer_icon"></i><i class="fa fa-info fa-stack-1x" id="inner_icon"></i></span></a>
+    </div>
+  </div>
+  <div class="info_area" id="info">
+    <div class="row" id="info_text">
+      <div class="col-md-3 col-md-offset-3">
+        <p>Ville Vuorio</p><br>
+        <p>ville.vuorio@student.tut.fi</p>
+      </div>
+      <div class="col-md-3">
+        <p>Harjoitustyö 0: ilmottautuminen</p><br>
+        <p>TIE-23500 kurssin harjoitustyö, joka sisältää ilmottautumislomakkeen sekä mahdollisuuden tarkastaa oma ilmottautuminen opiskelijanumerolla. Työ sisältää bonustehtävät 1 (CSS muotoilu) ja 2 (Ajax).</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/form.js"></script>
+</body>
+</html
